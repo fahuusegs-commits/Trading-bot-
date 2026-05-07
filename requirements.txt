@@ -1,5 +1,4 @@
-enter
-streamlit 
-yfinance 
-pandas_ta 
-plotly 
+streamlit
+yfinance
+pandas_ta
+plotly
