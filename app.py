@@ -5,9 +5,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(page_title="Mobile Trading Bot", layout="wide")
 st.title("📈 AI Trading Assistant")
-
-symbol = st.text_input("Enter Symbol (e.g. BTC-USD):", "BTC-USD")
-df = yf.download(symbol, period="1d", interval="15m")
+df = yf.download(symbol, period="5d", interval="1h")
 
 if not df.empty:
     # Basic Indicator (SMA)
