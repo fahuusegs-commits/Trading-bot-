@@ -12,7 +12,7 @@ symbol = st.text_input("Enter Symbol (e.g. BTC-USD, EURUSD=X):", "BTC-USD")
 
 # Fetch data
 try:
-    df = yf.download(symbol, period="1d", interval="5m")
+    df = yf.download(symbol, period="5d", interval="15m")
 
     if not df.empty:
         # RSI Calculation (Best for Binary Trading)
